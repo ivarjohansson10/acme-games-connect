@@ -1,29 +1,48 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div class="container-fluid header">
+      <p><b>Acme</b> Games</p>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <userForm />
+        <gameForm />
+      </div>
+      <div class="row">
+        <userAccounts />
+        <games />
+        <ownerships />
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
-export default Vue.extend({
-  name: 'App',
-  components: {
-    HelloWorld
+  import { Component, Vue } from 'vue-property-decorator'
+  
+  import userForm from '@/components/forms/UserForm.vue'
+  import userAccounts from '@/components/UserAccounts.vue'
+  import gameForm from '@/components/forms/GameForm.vue'
+  import games from '@/components/Games.vue'
+  import ownerships from '@/components/Ownerships.vue'
+  
+  @Component({
+    components: {
+      userForm,
+      gameForm,
+      userAccounts,
+      ownerships,
+      games
+    }
+  })
+
+  export default class App extends Vue {
+
   }
-});
+    
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  @import './assets/style.css';
 </style>
