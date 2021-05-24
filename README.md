@@ -6,7 +6,7 @@ Your task is to implement a single page application (frontend only) where users 
     - View/Create/modify/remove games
     - Grant/Revoke ownership of games to users
 	
-# An user account is an entity with the following information:
+### An user account is an entity with the following information:
     - User account id
     - First name
     - Last name
@@ -14,22 +14,22 @@ Your task is to implement a single page application (frontend only) where users 
     - Password
     - Date of birth
 	
-# An ownership is an entity that connects a user account with a game and has the following information:
+### An ownership is an entity that connects a user account with a game and has the following information:
     - Ownership id
     - User account id
     - Game id
     - State (indicates owned/revoked)
     - Registered date
 	
-# A game is an entity with the following information:
+### A game is an entity with the following information:
     - Game id
     - Name
     - Thumbnail (PNG or JPG)
     - Age restriction
 	
-# You don't need to implement a backend, and can assume that the admin is already logged in into the interface. There is no need to persistently store the data, but you get bonus points for storing them in the local storage. There is no need to provide test data. On first use there shouldn't be any user or game available.
+### You don't need to implement a backend, and can assume that the admin is already logged in into the interface. There is no need to persistently store the data, but you get bonus points for storing them in the local storage. There is no need to provide test data. On first use there shouldn't be any user or game available.
 
-# Objective:
+### Objective:
     - Implement the web interface
     - It's highly adviced to use TypeScript with strong typing
 	- Only use JavaScript if TypeScript is not possible for you
@@ -45,7 +45,7 @@ Your task is to implement a single page application (frontend only) where users 
     - Implement a login for the interface, based on the user accounts
     - Support mobile
 
-# Provide your source code as ZIP to us. Avoid zipping dependencies, but use package definitions. Also, you need to provide a report describing your development process. Describe your thought process, the problems you encountered and how you solved them. A good scope for such a report is 2-5 pages. Additionally, you need to provide how to build and test the frontend (e.g. running npm, using an development http server,...). Please mark code that you copied from somewhere else (e.g. Stack Overflow).
+### Provide your source code as ZIP to us. Avoid zipping dependencies, but use package definitions. Also, you need to provide a report describing your development process. Describe your thought process, the problems you encountered and how you solved them. A good scope for such a report is 2-5 pages. Additionally, you need to provide how to build and test the frontend (e.g. running npm, using an development http server,...). Please mark code that you copied from somewhere else (e.g. Stack Overflow).
 
 Have fun and good luck!
 / The Ubisoft Connect PC & Access
